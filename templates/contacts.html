@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Book</title>
+</head>
+<body>
+    <h1>My Contacts</h1>
+    <a href="/add">Add new contact</a>
+
+    {% for contact in contacts %}
+         <p>
+        {{ contact['name'] }} — {{ contact['phone'] }}
+        <form method="POST" action="/delete/{{ contact['id'] }}">
+            <button type="submit">Delete</button>
+        </form>
+        <a href="/amend/{{ contact['id'] }}">Amend</a>
+    </p>
+    {% endfor %}
+
+    
+</body>
+</html>

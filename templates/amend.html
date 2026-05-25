@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amend Contact</title>
+</head>
+<body>
+    <h1>Amend Contact</h1>
+    <form method="POST" action="/amend/{{ contact['id'] }}">
+        <p>Name: <input type="text" name="name" value="{{ contact['name'] }}"></p>
+        <p>Phone: <input type="text" name="phone" value="{{ contact['phone'] }}"></p>
+        <button type="submit">Save Changes</button>
+    </form>
+    <a href="/contacts">Back to contacts</a>
+</body>
+</html>
