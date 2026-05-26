@@ -2,6 +2,9 @@
 
 A web application built with Python, Flask, and SQLite.
 
+## Live Demo
+https://web-production-42e0f.up.railway.app/contacts
+
 ## Features
 - View all contacts
 - Add a new contact
@@ -22,6 +25,9 @@ A web application built with Python, Flask, and SQLite.
 3. Install dependencies: pip install -r requirements.txt
 4. Run the app: python app.py
 5. Open browser: http://127.0.0.1:5000/contacts
+
+## Deployment
+Deployed on Railway using Gunicorn as the production server.
 
 ## Tests
 Run with: pytest test_contacts.py
