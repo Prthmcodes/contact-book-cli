@@ -94,4 +94,4 @@ def search_contact():
     return render_template('search.html', results=results_list, query=query)
 
 if __name__ == '__main__':
- app.run(debug=True)
+ app.run(host='0.0.0.0', debug=True)
