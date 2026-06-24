@@ -20,6 +20,7 @@ def create_table():
                    id  INTEGER PRIMARY KEY AUTOINCREMENT,
                    name TEXT NOT NULL,
                    phone TEXT NOT NULL
+                   email TEXT
 
                    )
                    
